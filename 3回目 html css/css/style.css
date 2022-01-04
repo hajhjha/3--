@@ -40,10 +40,11 @@ img {
 }
 
 ul {
-    width: 960px;
+    max-width: 960px;
     display: flex;
     justify-content: space-between;
     padding: 60px 30px;
+    margin: 0 auto;
 }
 h1 {
     margin: 0 auto;
@@ -53,7 +54,7 @@ h1 {
     text-align: center;
 }
 li {
-    width: 300px;
+    max-width: 300px;
     background-color: white;
 }
 
@@ -74,15 +75,17 @@ p {
 @media screen and (max-width: 400px) {
     ul {
         display: block;
+        padding: 10px;
+        margin: 0 auto;
     }
     img {
         max-width: 100%;
     }
-    body {
-        margin: 0 auto;
-    }
+
     li {
         margin-bottom: 20px;
+        width: 100%;
+        margin: 0 auto;
     }
 }
 @media screen and(max-width:960px) {
