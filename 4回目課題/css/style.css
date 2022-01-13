@@ -113,7 +113,7 @@ span {
 .second {
     display: flex;
     justify-content: space-between;
-    margin: 100px auto;
+    padding-top: 100px;
 }
 .aboutusimages {
     height: 500px;
@@ -125,7 +125,6 @@ span {
 }
 .aboutus_logo {
     width: 272px;
-    height: 77px;
     padding-top: 50px;
 }
 .coffee {
@@ -144,6 +143,7 @@ span {
 /* MENU */
 .menu_area {
     text-align: center;
+    padding-top: 100px;
 }
 .menu_text {
     margin: 0 auto;
@@ -175,7 +175,6 @@ span {
 .gallery {
     margin: 0 auto;
     width: 245px;
-    height: 78px;
     padding-top: 100px;
 }
 /* Event */
@@ -184,7 +183,6 @@ span {
 .event_image {
     margin: 0 auto;
     width: 173px;
-    height: 78px;
     padding-top: 100px;
     padding-bottom: 40px;
 }
@@ -193,7 +191,6 @@ span {
     height: 200px;
     background-color: #ffff;
     border: 3px solid #4f260b;
-    width: 1000px;
     /* padding: 42px 160px;
     margin: 0 auto;
     vertical-align: middle; */
@@ -233,7 +230,6 @@ span {
 }
 .access_image {
     width: 214px;
-    height: 78px;
     padding-top: 80px;
     margin: 0 auto;
 }
@@ -252,7 +248,6 @@ iframe {
     padding-top: 70px;
     padding-left: 400px;
     width: 226px;
-    height: 50x;
 }
 
 .locate_info {
@@ -260,11 +255,18 @@ iframe {
     padding-left: 60px;
     text-align: left;
     font-size: 20px;
+    text-align: 1.1;
+}
+
+.locate_about {
+    padding-bottom: 25px;
 }
 footer {
+    margin: 0 auto;
     text-align: center;
     padding-bottom: 80px;
     padding-top: 80px;
+    max-width: 1000px;
 }
 
 .to_top {
