@@ -116,9 +116,7 @@ span {
     padding-top: 100px;
 }
 .aboutusimages {
-    height: 500px;
-    height: 560px;
-    max-width: 50%;
+    width: 50%;
 }
 .aboutus {
     margin-left: 90px;
@@ -191,6 +189,10 @@ span {
     height: 200px;
     background-color: #ffff;
     border: 3px solid #4f260b;
+    display: flex;
+    /* justify-content: space-around; */
+    /* flex-flow: column;
+    align-items: center; */
     /* padding: 42px 160px;
     margin: 0 auto;
     vertical-align: middle; */
@@ -202,6 +204,7 @@ span {
     justify-content: space-around;
     flex-flow: column;
     align-items: center;
+    margin: 0 auto;
 }
 .event {
     font-size: 23px;
@@ -239,14 +242,19 @@ iframe {
 }
 
 /* information */
-.locate_about {
-    display: flex;
-    max-width: 1920px;
-    text-align: 1.1;
+footer {
+    max-width: 1000px;
+    line-height: 1.1;
+    margin: 0 auto;
 }
+
 .locate_name {
+    display: flex;
+    margin: 0 auto;
+}
+
+.design_cafe_logo_footer {
     padding-top: 70px;
-    padding-left: 400px;
     width: 226px;
 }
 
@@ -261,12 +269,11 @@ iframe {
 .locate_about {
     padding-bottom: 25px;
 }
-footer {
-    margin: 0 auto;
+
+.copy {
     text-align: center;
-    padding-bottom: 80px;
     padding-top: 80px;
-    max-width: 1000px;
+    padding-bottom: 70px;
 }
 
 .to_top {
