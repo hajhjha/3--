@@ -7,7 +7,7 @@
     <title>カフェのサイト</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="content" content="カフェのサイト">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -15,14 +15,28 @@
         <div class="header_wrap" id="header">
         <h1 class="header_logo">
             <img src="images/design_cafe_logo_header@2x.png" alt="カフェのデザイン"></h1>
-        <ul class="pc_nav">
+            <nav class="pc_nav">
+        <ul>
             <li><a href="#about">ABOUT US</a></li>
             <li><a href="#menu">MENU</a></li>
             <li><a href="#to_gallery">GALLERY</a></li>
             <li><a href="#event">EVENT</a></li>
             <li><a href="#access">ACCESS</a></li>
         </ul>
+            </nav>
+        
+        <div class="sp_btn"><span></span></div>
+        <nav class="sp_nav">
+        <ul>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#to_gallery">GALLERY</a></li>
+            <li><a href="#event">EVENT</a></li>
+            <li><a href="#access">ACCESS</a></li>
+        </ul>
+    </nav>
     </div>
+
     <div class="slider">
         <p>
             <img src="images/pc_first-100.jpg" alt="カフェの様子">
@@ -50,14 +64,14 @@
                     <span>こだわりのコーヒー</span>
                 </div>  
             <div class="aboutus_text">
-                <span>サービスを提供する上での想いや心がけていることなど、メッ</span>
-                <span>セージを文章で紹介します。サービスを提供する上での想い</span>
-                <span>や心がけていることなど、メッセージを文章で紹介します。サー</span>
-                <span>ビスを提供する上での想いや心がけていることなど、メッセー</span>
-                <span>ジを文章で紹介します。サービスを提供する上での想いや心</span>
-                <span>がけていることなど、メッセージを文章で紹介します。サービス</span>
-                <span>を提供する上での想いや心がけていることなど、メッセージを</span>
-                <span>文章で紹介します。</span>
+               <p class="aboutus_text">サービスを提供する上での想いや心がけていることなど、メッ
+                セージを文章で紹介します。サービスを提供する上での想い
+                や心がけていることなど、メッセージを文章で紹介します。サー
+                ビスを提供する上での想いや心がけていることなど、メッセー
+                ジを文章で紹介します。サービスを提供する上での想いや心
+                がけていることなど、メッセージを文章で紹介します。サービス
+                を提供する上での想いや心がけていることなど、メッセージを
+                文章で紹介します。</p>
             </div>
         </div>
         </section>
@@ -76,9 +90,9 @@
                   <p class="drink">
                       Drink
                   </p>
-                  <span class=about_drink>ドリンクメニューの概要を100文字程度で</span>
-                  <span class=about_drink>紹介します。素材やこだわりなどをアピー</span>
-                  <span class=about_drink>ルしていきます。</span>
+                  <p class="about_drink">ドリンクメニューの概要を100文字程度で
+                  紹介します。素材やこだわりなどをアピー
+                ルしていきます。</p>
                  </li>
                  <li class="about_menu"> 
                      <p class=menu_image>
@@ -87,9 +101,9 @@
                     <p class="drink">
                         Food
                     </p>
-                    <span class=about_drink>フードメニューの概要を100文字程度で紹</span>
-                    <span class=about_drink>介します。素材やこだわりなどをアピールし</span>
-                    <span class=about_drink>ていきます。</span>
+                    <p class="about_drink">フードメニューの概要を100文字程度で紹
+                   介します。素材やこだわりなどをアピールし
+                    ていきます。</p>
                 </li>
                  <li class="about_menu">
                     <p class=menu_image>
@@ -100,9 +114,9 @@
                     <p class="drink">
                         Sweets
                     </p>
-                    <span class=about_drink>スイーツメニューの概要を100文字程度で</span>
-                    <span class=about_drink>紹介します。素材やこだわりなどをアピー</span>
-                    <span class=about_drink>ルしていきます。</span>
+                    <p class="about_drink">スイーツメニューの概要を100文字程度で
+                    紹介します。素材やこだわりなどをアピー
+                    ルしていきます。</p>
                  </li>
              </ul>
             </section>
@@ -159,7 +173,6 @@
                     <span class="locate_about">東京都渋谷区東京南123デザインビルB1</span>
                     <span class="locate_about">MAIL：info@designcafe.tokyo</span>
                 </ul>
-            </li>
         </div>
     </div>
         <p class="copy">© 2021 DESIGN CAFE</p>
@@ -171,6 +184,13 @@
     </p>
 
     
-    
+    <script>
+        $(function(){
+            $('.sp_btn').click(function(){
+            $('.sp_nav').fadeToggle();
+            $('.sp_btn').toggleClass('open');
+            });
+        });
+    </script>
 </body>
 </html>

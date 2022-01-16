@@ -61,7 +61,7 @@ img {
 h1 {
     width: 226.78px;
 }
-.pc_nav {
+.pc_nav ul {
     display: flex;
 }
 .pc_nav li {
@@ -86,7 +86,7 @@ h1 {
 }
 main {
     max-width: 1000px;
-    padding: 10;
+    padding: 10px;
     margin: 0 auto;
 }
 .first {
@@ -113,13 +113,16 @@ span {
 .second {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 100px;
 }
 .aboutusimages {
     width: 50%;
 }
 .aboutus {
-    margin-left: 90px;
+    width: 50%;
+    padding-left: 7.5%;
+    box-sizing: border-box;
 }
 .aboutus_logo {
     width: 272px;
@@ -136,6 +139,7 @@ span {
     font-size: 16px;
     line-height: 1.625;
     padding-bottom: 35px;
+    width: 410px;
 }
 
 /* MENU */
@@ -168,6 +172,8 @@ span {
 .about_drink {
     text-align: left;
     font-size: 17px;
+    line-height: 1.47;
+    width: 300px;
 }
 
 .gallery {
@@ -186,7 +192,6 @@ span {
 }
 
 .event_text {
-    height: 200px;
     background-color: #ffff;
     border: 3px solid #4f260b;
     display: flex;
@@ -198,8 +203,8 @@ span {
     vertical-align: middle; */
 }
 .event_ {
-    height: 110px;
     padding-top: 45px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-around;
     flex-flow: column;
@@ -221,6 +226,7 @@ span {
     text-align: left;
     text-decoration: underline;
     text-decoration-color: black;
+    padding-bottom: 25px;
 }
 
 /* access */
@@ -244,7 +250,6 @@ iframe {
 /* information */
 footer {
     max-width: 1000px;
-    line-height: 1.1;
     margin: 0 auto;
 }
 
@@ -281,4 +286,92 @@ footer {
     bottom: 20px;
     right: 20px;
     width: 125px;
+}
+
+/* スマホメニュー消す */
+.sp_nav {
+    display: none;
+}
+.sp_btn {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    /* header */
+    .pc_nav {
+        display: none;
+    }
+
+    .sp_btn {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 10px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 100;
+    }
+    .sp_btn span {
+        background-color: #ffff;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: relative;
+        top: 10px;
+        transition: 0.3s;
+    }
+
+    .sp_btn span::before,
+    .sp_btn span::after {
+        content: "";
+        background-color: white;
+        width: 33px;
+        height: 2px;
+        display: block;
+        position: absolute;
+        transition: 0.3s;
+    }
+    .sp_btn span::before {
+        bottom: 10px;
+    }
+    .sp_btn span::after {
+        top: 10px;
+    }
+
+    .open span {
+        background-color: transparent;
+    }
+
+    .open span::before {
+        bottom: 0px;
+        transform: rotate(45deg);
+    }
+    .open span::after {
+        top: 0px;
+        transform: rotate(135deg);
+    }
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgba(000, 000, 000, 0.8);
+        width: 100%;
+    }
+    .sp_nav ul {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp_nav li {
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        padding: 15px;
+        color: #ffff;
+        font-family: "A1 Mincho", "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+            "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E",
+            "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
 }
