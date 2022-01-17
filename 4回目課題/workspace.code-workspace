@@ -1,0 +1,17 @@
+{
+    "folders": [
+		{
+			"path": "css"
+		},
+		{
+			"path": "images"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../20220115"
+		}
+	],
+    "settings": {}
+}
