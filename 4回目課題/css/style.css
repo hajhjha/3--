@@ -115,7 +115,6 @@ span {
     /* justify-content: space-between; */
     align-items: center;
     padding-top: 100px;
-    max-height: 560px;
 }
 .aboutusimages {
     width: 50%;
@@ -158,7 +157,6 @@ span {
 .menu {
     display: flex;
     justify-content: space-between;
-    height: 300px;
     padding-top: 45px;
 }
 .about_menu {
@@ -182,6 +180,9 @@ span {
     margin: 0 auto;
     width: 245px;
     padding-top: 100px;
+}
+.gallery_mobile {
+    display: none;
 }
 /* Event */
 /* .event_area {
@@ -298,9 +299,15 @@ footer {
     display: none;
 }
 
+br {
+    display: none;
+}
 /* ※タブレットレスポンシブ */
 @media screen and (max-width: 1024px) {
     /* header */
+    br {
+        display: block;
+    }
     .background {
         max-width: 100%;
     }
@@ -411,11 +418,15 @@ footer {
 /* ※スマホ用レスポンシブ */
 @media screen and (max-width: 767px) {
     /* ※メイン部分 */
+    h1 {
+        width: 187.5px;
+        margin-top: -5px;
+    }
     picture {
         max-width: 100%;
     }
     .main {
-        max-width: 335px;
+        width: 330px;
     }
     h1 {
         width: 187.518px;
@@ -425,7 +436,7 @@ footer {
     }
     .first {
         padding-top: 25px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
         font-size: 17px;
     }
     .title {
@@ -437,51 +448,130 @@ footer {
     .every {
         font-size: 16px;
         line-height: 1.3152;
-        width: 337px;
     }
 
     /* ※about us */
     .second {
         display: block;
+        padding-top: 60px;
+        margin: 0 auto;
     }
     .aboutusimages {
         width: 100%;
     }
+    .aboutus_logo {
+        width: 160px;
+        padding-top: 0px;
+    }
     .aboutus {
-        width: 100%;
-        padding-top: 60px;
+        width: 320px;
         padding-bottom: 60px;
+        padding-left: 0px;
+        margin: 0 auto;
+        text-align: center;
     }
     .aboutus_text {
-        padding-bottom: 100px;
+        padding-bottom: 0px;
+        width: 310px;
+        font-size: 16px;
+    }
+    .aboutus_mobile {
+        display: flex;
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+        padding-bottom: 30px;
+    }
+    .aboutusimages {
+        display: none;
     }
 
     /* ※メニュー */
     .menu {
         display: block;
+        padding-top: 30px;
+    }
+    .menu_text {
+        width: 90px;
+    }
+    .menu_area {
+        padding-top: 0px;
+        width: 300px;
+        margin: 0 auto;
     }
     .about_menu {
         max-width: 100%;
+        padding-bottom: 60px;
     }
+    .drink {
+        padding-bottom: 10px;
+    }
+
+    /* ギャラリー */
+    .gallery {
+        width: 143px;
+        padding-top: 0px;
+    }
+    .gallery_mobile {
+        display: block;
+        padding-top: 20px;
+        margin: 0 calc(50% - 50vw);
+        width: 100vw;
+    }
+
     /* ※イベント */
+
     .event_ {
-        max-width: 335px;
+        padding-top: 25px;
+        padding-bottom: 0px;
+    }
+    .event_image {
+        width: 100px;
+        padding-top: 25px;
         padding-bottom: 20px;
     }
+
     .event {
         max-width: 285px;
         text-align: left;
         padding-left: 30px;
         padding-right: 10px;
+        padding-bottom: 0px;
         font-size: 16px;
-        padding-top: 25px;
     }
+
     .event_content {
         display: block;
         margin-left: 0px;
-        max-width: 285px;
+        width: 285px;
+        padding-bottom: 25px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+    /* アクセス */
+    .access_image {
+        width: 124px;
+        padding-top: 20px;
+    }
+    .map {
+        padding-top: 10px;
+    }
+
+    /* ※footer */
+    .locate_name {
+        display: block;
+        width: 320px;
+    }
+    .design_cafe_logo_footer {
+        width: 226px;
+        padding-top: 30px;
+    }
+    .locate_info {
+        padding-top: 30px;
+        padding-left: 0px;
+        font-size: 18px;
+    }
+    .copy {
+        padding-top: 40px;
     }
 }
