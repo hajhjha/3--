@@ -427,6 +427,7 @@ br {
     }
     .main {
         padding: 0 2.63%;
+        max-width: 100%;
     }
     h1 {
         width: 187.518px;
@@ -468,7 +469,7 @@ br {
         padding-bottom: 60px;
         padding-left: 0px;
         margin: 0 auto;
-        width: 335px;
+        width: 100%;
     }
     .coffee {
         text-align: left;
@@ -482,6 +483,7 @@ br {
         font-size: 16px;
         text-align: left;
         margin: 0 auto;
+        max-width: 100%;
     }
     .aboutus_mobile {
         display: flex;
@@ -499,11 +501,10 @@ br {
         padding-top: 30px;
     }
     .menu_text {
-        width: 90px;
+        width: 87px;
     }
     .menu_area {
         padding-top: 0px;
-        width: 300px;
         margin: 0 auto;
     }
     .about_menu {
@@ -512,12 +513,16 @@ br {
     }
     .drink {
         padding-bottom: 10px;
+        padding-left: 20px;
+    }
+    .menu_image img {
+        border-top-right-radius: 40px;
     }
 
     /* ギャラリー */
     .gallery {
-        width: 143px;
         padding-top: 0px;
+        width: 142px;
     }
     .gallery_mobile {
         display: block;
@@ -538,14 +543,13 @@ br {
         padding-bottom: 20px;
     }
     .event_area {
-        width: 335px;
         margin: 0 auto;
     }
     .event {
-        max-width: 285px;
         text-align: left;
-        padding-left: 30px;
-        padding-right: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 100%;
         padding-bottom: 0px;
         font-size: 16px;
     }
@@ -553,7 +557,6 @@ br {
     .event_content {
         display: block;
         margin-left: 0px;
-        width: 285px;
         padding-bottom: 25px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -575,10 +578,8 @@ br {
     /* ※footer */
     .locate_name {
         display: block;
-        width: 320px;
     }
     .design_cafe_logo_footer {
-        width: 226px;
         padding-top: 30px;
     }
     .locate_info {
