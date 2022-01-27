@@ -530,6 +530,9 @@ br {
         margin: 0 calc(50% - 50vw);
         width: 100vw;
     }
+    .gallery_mobile img {
+        width: 100%;
+    }
 
     /* ※イベント */
 
@@ -545,10 +548,14 @@ br {
     .event_area {
         margin: 0 auto;
     }
+    .event_text {
+        display: block;
+        padding: 20px 9%;
+    }
     .event {
         text-align: left;
-        padding-left: 0px;
-        padding-right: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
         width: 100%;
         padding-bottom: 0px;
         font-size: 16px;
